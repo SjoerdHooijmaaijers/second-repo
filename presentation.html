@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Sjoerd Hooijmaaijers">
+  <title>Assignment 2</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/solarized.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+  <h1 class="title">Assignment 2</h1>
+  <h2 class="author">Sjoerd Hooijmaaijers</h2>
+  <h3 class="date">Tilburg University</h3>
+</section>
+<section id="TOC">
+<ul>
+<li><a href="#/introduction">Introduction</a></li>
+</ul>
+</section>
+
+<section><section id="introduction" class="titleslide slide level1"><h1>Introduction</h1></section><section id="introduction-1" class="slide level2">
+<h1>Introduction</h1>
+<p>For this assignment, I have chosen to pick previous assignments from the course Generational Economics. Fearing that only one may have been too short, I will include the first and the second (out of a total of 6) assignment of this course. Both have mathematical derivations, but perhaps lack a few words.</p>
+</section><section id="question-1" class="slide level2">
+<h1>Question 1</h1>
+<p>Assume that production is described by <span class="math inline">\(Y=AK^a L^b\)</span>, A, a and b are positive constants   There are three conditions for a neoclassical function.<br />
+Condition 1: Constant returns to scale<br />
+<span class="math display">\[ \lambda Y = F(\lambda K,\lambda L)\]</span><br />
+<span class="math display">\[ \lambda Y = A*\lambda K^a*\lambda L^b\]</span><br />
+<span class="math display">\[ \lambda Y = A*\lambda ^{a+b}* K^a* L^b\]</span><br />
+<span class="math display">\[ \lambda Y = \lambda ^{a+b}F(\lambda K,\lambda L)\]</span><br />
+</p>
+</section><section id="question-1-2" class="slide level2">
+<h1>Question 1</h1>
+<p>Thus, a+b=1<br />
+And similarly; b=1-a   Condition 2: Positive but diminishing returns</p>
+<p><span class="math display">\[ \frac{\delta F}{\delta K} = aAK^{a-1}L^{1-a} &gt; 0 \]</span><br />
+<span class="math display">\[ \frac{\delta ^2 F}{\delta K^2} = (a-1)aAK^{a-2}L^{1-a} &lt; 0       \]</span><br />
+</p>
+</section><section id="question-1-3" class="slide level2">
+<h1>Question 1</h1>
+<p><span class="math display">\[ \frac{\delta F}{\delta L} = aAK^{a}L^{-a} &gt; 0 \]</span><br />
+<span class="math display">\[ \frac{\delta ^2 F}{\delta L^2} = -a(1-a)AK^{a}L^{-a-1} &lt; 0       \]</span><br />
+</p>
+</section><section id="question-1-4" class="slide level2">
+<h1>Question 1</h1>
+<p>Condition 3. Inada conditions<br />
+The marginal product of capital is<br />
+<span class="math display">\[ MPK = aAK^{a-1}L^{1-a} \]</span><br />
+<span class="math display">\[ = aA\frac{K}{L}^{a-1} \]</span><br />
+</p>
+</section><section id="question-1-5" class="slide level2">
+<h1>Question 1</h1>
+<p>and thus <span class="math display">\[ \lim_{k\to\infty} aA \frac{K}{L}^{a-1} =0 \]</span><br />
+<span class="math display">\[ \lim_{k\to 0} aA \frac{K}{L}^{a-1} = \infty \]</span><br />
+<br />
+</p>
+</section><section id="question-1-6" class="slide level2">
+<h1>Question 1</h1>
+<p>The marginal product of labour is<br />
+<span class="math display">\[ MPL = (1-a)AK^{a}L^{-a} \]</span><br />
+<span class="math display">\[ = (1-a)A\frac{K}{L}^{a} \]</span><br />
+and thus <span class="math display">\[ \lim_{k\to\infty} (1-a)A \frac{K}{L}^{a} =0 \]</span><br />
+<span class="math display">\[ \lim_{k\to 0} (1-a)A \frac{K}{L}^{a} = \infty \]</span><br />
+In conclusion, all three requirements are fulfilled</p>
+</section><section id="question-2" class="slide level2">
+<h1>Question 2</h1>
+<p>Write output per labour efficiency unit (y) as a function of capital per labour efficiency unit (k). What is the marginal product of k?</p>
+<p>Remember we can write the production function as<br />
+<span class="math display">\[ Y=AK^a L^{a-1} \]</span><br />
+</p>
+</section><section id="question-2-1" class="slide level2">
+<h1>Question 2</h1>
+<p>Then, taking per labour efficiency units<br />
+<span class="math display">\[ \frac{Y}{L}= A \frac{K}{L}^{a} \frac{L}{L}^{a-1} \]</span><br />
+Or in other terms<br />
+<span class="math display">\[ y=Ak^a \]</span><br />
+Then the marginal product of k is:<br />
+<span class="math display">\[ f(k)=Ak^a \]</span><br />
+<span class="math display">\[ f&#39;(k)=aAk^{a-1} \]</span><br />
+Question 3 --------</p>
+<p>Assume that an economy is in a dynamically inefficient steady state when the rate of population growth n rises to a permanently higher level. Assume that investment per labour efficiency unit i does not change and that the capital-labour ratio converges to a new steady-state level. Will utility in the long run increase or decrease? Explain your answer!</p>
+</section><section id="question-3" class="slide level2">
+<h1>Question 3</h1>
+<p>Taking that the economy starts off in a dynamically inefficient steady-state, it is located somewhere in the right hand side of the above graph.  If the rate of population growth increases, and holding investment per labor efficiency unit constant, we can state, from the equation in <span class="math display">\[i=(\delta+g)k\]</span>, that capital-labor ratio will decrease (intuitively, it makes sense considering that population now grows quicker – and so will labor – while, for capital, we see no difference)</p>
+</section><section id="question-3-1" class="slide level2">
+<h1>Question 3</h1>
+<p>Graphically, this means that the steady-state will now be represented further to the left. this, in the long-run, utility will increase as consumption increases, as the economy approaches its optimal capital-labor ratio.<br />
+However, it is important to denote that if the decrease in k is large enough, it could also lead to the Golden Rule capital-labor ratio being surpassed, which would lead to a less-than-optimal utility.<br />
+</p>
+</section><section id="question-3-2" class="slide level2">
+<h1>Question 3</h1>
+<figure>
+<img src="Ass2.png" />
+</figure>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

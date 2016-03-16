@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Sjoerd Hooijmaaijers - ANR: 496687" />
+  <title>Numerical Simulation: Assignment 2</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Numerical Simulation: Assignment 2</h1>
+<h2 class="author">Sjoerd Hooijmaaijers - ANR: 496687</h2>
+</div>
+<h1 id="introduction">Introduction</h1>
+<p>For this assignment, I have chosen to pick previous assignments from the course Generational Economics. Fearing that only one may have been too short, I will include the first and the second (out of a total of 6) assignment of this course. Both have mathematical derivations, but perhaps lack a few words.</p>
+<h1 id="generational-economics-assignment-1">Generational Economics Assignment 1</h1>
+<p>Assume that production is described by <span class="math inline">\(Y=AK^a L^b\)</span>, A, a and b are positive constants</p>
+<h2 id="question-1">Question 1</h2>
+<h3 id="i.-is-this-production-function-neoclassical-which-of-the-neoclassical-conditions-does-it-satisfy-and-which-ones-not" class="unnumbered"> i. Is this production function neoclassical? Which of the neoclassical conditions does it satisfy and which ones not?</h3>
+<p>There are three conditions for a neoclassical function.<br />
+Condition 1: Constant returns to scale<br />
+<span class="math inline">\( \lambda Y = F(\lambda K,\lambda L)\)</span><br />
+<span class="math inline">\( \lambda Y = A*\lambda K^a*\lambda L^b\)</span><br />
+<span class="math inline">\( \lambda Y = A*\lambda ^{a+b}* K^a* L^b\)</span><br />
+<span class="math inline">\( \lambda Y = \lambda ^{a+b}F(\lambda K,\lambda L)\)</span><br />
+Thus, a+b=1<br />
+And similarly; b=1-a<br />
+Since a and b are positive constants, we know that:</p>
+<ul>
+<li><p><span class="math inline">\(0&lt;a&lt;1\)</span></p></li>
+<li><p><span class="math inline">\(0&lt;b&lt;1\)</span></p></li>
+</ul>
+<p>Condition 2: Positive but diminishing returns</p>
+<p><span class="math display">\[\frac{\delta F}{\delta K} = aAK^{a-1}L^{1-a} &gt; 0\]</span><br />
+<span class="math display">\[\frac{\delta ^2 F}{\delta K^2} = (a-1)aAK^{a-2}L^{1-a} &lt; 0\]</span><br />
+<span class="math display">\[\frac{\delta F}{\delta L} = aAK^{a}L^{-a} &gt; 0\]</span><br />
+<span class="math display">\[\frac{\delta ^2 F}{\delta L^2} = -a(1-a)AK^{a}L^{-a-1} &lt; 0\]</span><br />
+Condition 3. Inada conditions<br />
+The marginal product of capital is<br />
+<span class="math display">\[MPK = aAK^{a-1}L^{1-a}\]</span><br />
+<span class="math display">\[= aA\frac{K}{L}^{a-1}\]</span><br />
+and thus <span class="math display">\[\lim_{k\to\infty} aA \frac{K}{L}^{a-1} =0\]</span><br />
+<span class="math display">\[\lim_{k\to 0} aA \frac{K}{L}^{a-1} = \infty\]</span><br />
+<br />
+The marginal product of labour is<br />
+<span class="math display">\[MPL = (1-a)AK^{a}L^{-a}\]</span><br />
+<span class="math display">\[= (1-a)A\frac{K}{L}^{a}\]</span><br />
+and thus <span class="math display">\[\lim_{k\to\infty} (1-a)A \frac{K}{L}^{a} =0\]</span><br />
+<span class="math display">\[\lim_{k\to 0} (1-a)A \frac{K}{L}^{a} = \infty\]</span><br />
+In conclusion, all three requirements are fulfilled</p>
+<h3 id="ii.-write-output-per-labour-efficiency-unit-y-as-a-function-of-capital-per-labour-efficiency-unit-k.-what-is-the-marginal-product-of-k" class="unnumbered">ii. Write output per labour efficiency unit (y) as a function of capital per labour efficiency unit (k). What is the marginal product of k?</h3>
+<p>Remember we can write the production function as<br />
+<span class="math display">\[Y=AK^a L^{a-1}\]</span><br />
+Then, taking per labour efficiency units<br />
+<span class="math display">\[\frac{Y}{L}= A \frac{K}{L}^{a} \frac{L}{L}^{a-1}\]</span><br />
+Or in other terms<br />
+<span class="math display">\[y=Ak^a\]</span><br />
+Then the marginal product of k is:<br />
+<span class="math display">\[f(k)=Ak^a\]</span><br />
+<span class="math display">\[f&#39;(k)=aAk^{a-1}\]</span><br />
+</p>
+<h3 id="iii.-assume-that-an-economy-is-in-a-dynamically-inefficient-steady-state-when-the-rate-of-population-growth-n-rises-to-a-permanently-higher-level.-assume-that-investment-per-labour-efficiency-unit-i-does-not-change-and-that-the-capital-labour-ratio-converges-to-a-new-steady-state-level.-will-utility-in-the-long-run-increase-or-decrease-explain-your-answer" class="unnumbered">iii. Assume that an economy is in a dynamically inefficient steady state when the rate of population growth n rises to a permanently higher level. Assume that investment per labour efficiency unit i does not change and that the capital-labour ratio converges to a new steady-state level. Will utility in the long run increase or decrease? Explain your answer!</h3>
+<p>Taking that the economy starts off in a dynamically inefficient steady-state, it is located somewhere in the right hand side of the above graph.<br />
+If the rate of population growth increases, and holding investment per labor efficiency unit constant, we can state, from the equation in <span class="math inline">\(i=(\delta+g)k\)</span>, that capital-labor ratio will decrease (intuitively, it makes sense considering that population now grows quicker – and so will labor – while, for capital, we see no difference); graphically, this means that the steady-state will now be represented further to the left.<br />
+Given this, in the long-run, utility will increase as consumption increases, as the economy approaches its optimal capital-labor ratio.<br />
+However, it is important to denote that if the decrease in k is large enough, it could also lead to the Golden Rule capital-labor ratio being surpassed, which would lead to a less-than-optimal utility.<br />
+</p>
+<p><img src="Ass2.png" alt="image" /></p>
+</body>
+</html>
